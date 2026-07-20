@@ -1,78 +1,46 @@
-# Netflix Reactions — Proposta de Novo Componente Interativo
+# 🎬 Netflix Features
 
-**De:** Áquila  
-**Para:** Netflix — Product & Innovation Team  
-**Assunto:** Sugestão de Feature — Netflix Reactions (Reações Interativas)
+Coleção de propostas de novas funcionalidades para a Netflix, com foco em transformar a experiência de assistir — hoje individual e passiva — em algo **social, interativo e compartilhado**.
 
----
-
-## Resumo
-
-Proponho a criação de um componente chamado **Netflix Reactions** — uma camada interativa, opcional e não-intrusiva, que permite aos usuários registrarem reações e comentários curtos em **momentos específicos** do conteúdo, criando uma experiência social e emocional sem comprometer a imersão.
+Cada ideia é documentada em um doc próprio, com o mesmo padrão: problema, solução, mecânica de funcionamento, valor para o negócio e cenários de uso.
 
 ---
 
-## O Problema
+## 💡 Ideias
 
-Hoje, quando um espectador assiste a um documentário inspirador, uma cena impactante de um filme ou um momento marcante de uma série, a única forma de expressar o que sentiu é sair da plataforma — ir ao Twitter/X, Reddit ou grupos de WhatsApp. A Netflix perde essa camada de engajamento emocional e os dados valiosos que vêm com ela.
-
----
-
-## A Solução: Netflix Reactions
-
-Um componente **ativável/desativável** pelo usuário que exibe micro-reações de outros espectadores em pontos específicos do conteúdo.
-
-### Como funciona
-
-1. **A Netflix ou a produtora define "janelas de reação"** — momentos específicos do conteúdo onde reações são permitidas (ex: a cada 5-10 minutos, em cenas-chave, ou em momentos editorialmente selecionados).
-
-2. **O usuário pode reagir de forma simples e rápida:**
-   - Reações com emoji pré-definidos (😢 😮 👏 😡 🔥 ❤️)
-   - Micro-comentários de até 100 caracteres (com moderação automática)
-   - Ex: *"Que atitude incrível dessa pessoa"*, *"Essa cena me arrepiou"*
-
-3. **As reações aparecem de forma sutil** para outros usuários que também tenham o componente ativo — estilo "danmaku leve" ou balões discretos na lateral, sem sobrepor legendas ou elementos visuais importantes.
-
-4. **Controle total do usuário:**
-   - Toggle on/off a qualquer momento
-   - Filtro por tipo (só emojis, só comentários, ambos)
-   - Controle de densidade (poucas / moderadas / muitas reações visíveis)
-
-### Controle de conteúdo
-
-- Moderação automática por IA para filtrar linguagem imprópria, spoilers e conteúdo ofensivo
-- Sistema de denúncia por outros usuários
-- A Netflix mantém controle editorial sobre quais momentos são "reativos"
-- Perfis infantis automaticamente excluídos ou com camada extra de moderação
+| # | Feature | Em uma frase | Doc completo |
+|---|---------|--------------|--------------|
+| 1 | **Netflix Reactions** | Reações e micro-comentários de espectadores em momentos específicos do conteúdo, em janelas controladas pela Netflix/produtora, com toggle on/off | [docs/netflix-reactions.md](docs/netflix-reactions.md) |
+| 2 | **Netflix Group Play** | Salas nativas para assistir em grupo à distância, com reprodução sincronizada, ready check e pausas para banheiro/snacks votadas pela maioria com timer | [docs/netflix-group-play.md](docs/netflix-group-play.md) |
 
 ---
 
-## Por que isso importa para a Netflix
+## 🔗 Como as ideias se conectam
 
-- **Engajamento:** aumenta o tempo de permanência e cria motivo para reassistir conteúdos ("quero ver o que as pessoas reagiram")
-- **Dados:** captura de sentimento emocional em tempo real — insumo valioso para recomendação, produção e marketing
-- **Diferenciação:** nenhuma plataforma de streaming oferece algo assim de forma nativa e bem integrada
-- **Comunidade:** transforma a experiência individual em coletiva, sem exigir que o usuário saia da plataforma
-- **Viralização:** reações marcantes podem ser compartilhadas como cards nas redes sociais, gerando marketing orgânico
+As features foram pensadas para funcionar de forma **independente ou combinada**:
 
----
-
-## Cenários de Uso
-
-| Contexto | Exemplo de Reação |
-|---|---|
-| Documentário biográfico | 👏 *"Obrigado por essa coragem"* |
-| Cena de suspense em filme | 😮 *"NÃO ACREDITO"* |
-| Revelação em série | 🔥 *"Eu sabia!!!"* |
-| Momento emocional | 😢 *"Chorei aqui"* |
-| Stand-up comedy | 😂 (apenas emoji) |
+- **Reactions sozinho** → camada social assíncrona: você vê o que outros espectadores sentiram naquele momento
+- **Group Play sozinho** → experiência síncrona: todos assistem juntos, com mecânicas sociais de sala
+- **Reactions + Group Play** → o ápice: reações ao vivo privadas da sala, resumo de highlights do grupo ao final da sessão, e a experiência de "estar junto" mesmo à distância
 
 ---
 
-## Próximos Passos
+## 📁 Estrutura do repositório
 
-Estou disponível para detalhar a lógica técnica do componente, incluindo arquitetura de dados, estratégia de moderação, UX/UI e implementação. Tenho experiência sólida em desenvolvimento full stack, sistemas de alta escala e integrações complexas, e adoraria colaborar para transformar essa ideia em realidade.
+```
+netflix-features/
+├── README.md                        ← você está aqui (índice das ideias)
+└── docs/
+    ├── netflix-reactions.md         ← proposta completa da ideia 1
+    └── netflix-group-play.md        ← proposta completa da ideia 2
+```
+
+Novas ideias entram como um novo doc em `docs/` + uma linha na tabela acima.
 
 ---
 
-*"A Netflix revolucionou como assistimos. Netflix Reactions pode revolucionar como sentimos — juntos."*
+## 👤 Autor
+
+**Áquila Trindade** — Full Stack Engineer com foco em arquitetura, integrações e segurança de aplicações.
+
+Ideias, feedback e discussões são bem-vindos via issues.
